@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('tbc.ngGoogleStaticMap', [])
+  angular.module('tbc.ngGoogleStaticMaps', [])
     .controller('StaticGoogleMapCtrl', function () {
       var BASE_URL = '//maps.googleapis.com/maps/api/staticmap?';
       var STYLE_ATTRS = ['color', 'label', 'size', 'icon'];
@@ -58,12 +58,12 @@
         }, '');
       };
     })
-    .directive('staticGmap', function ($parse) {
+    .directive('static-google-map', function ($parse) {
       return {
         template: '<img alt="Google Map">',
         replace: true,
         restrict: 'E',
-        controller: 'StaticGoogleMapCtrl',
+        controller: 'StaticGoogleMapsCtrl',
         scope: true,
 
         link: function postLink(scope, elements, attrs, ctrl) {

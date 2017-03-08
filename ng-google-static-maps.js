@@ -58,7 +58,7 @@
         }, '');
       };
     })
-    .directive('static-google-map', function ($parse) {
+    .directive('staticGoogleMap', function ($parse) {
       return {
         template: '<img alt="Google Map">',
         replace: true,

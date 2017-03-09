@@ -5,7 +5,7 @@ Maps](https://developers.google.com/maps/documentation/staticmaps/).
 
 ## Usage
 
-1. `bower install --save angular-google-staticmaps`
+1. `bower install --save ng-google-static-maps`
 2. Include dependencies in your HTML.
 3. Load the `tbc.ngGoogleStaticMaps` module for your Angular app.
 4. Use the `static-google-map` directive.

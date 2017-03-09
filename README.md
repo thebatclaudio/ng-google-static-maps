@@ -41,11 +41,6 @@ denotes the width and pixels and `HEIGHT` the height.
 
 The sensor attribute must explicitly be set to either `true` or `false`.
 
-## Contributing
-
-Pull requests welcome. Only change files in `src` and don't bump any versions.
-Please respect the code style in place.
-
 ## License
 
 MIT

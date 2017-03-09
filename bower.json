@@ -1,7 +1,7 @@
 {
   "name": "ng-google-static-maps",
   "version": "0.1.0",
-  "main": "ng-google-static-maps.js",
+  "main": "./ng-google-static-maps.js",
   "homepage": "https://github.com/thebatclaudio/ng-google-static-maps",
   "authors": [
     "Claudio La Barbera <labarbera.claudio@gmail.com>"

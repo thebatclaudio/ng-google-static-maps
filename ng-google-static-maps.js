@@ -7,7 +7,7 @@
   'use strict';
 
   angular.module('tbc.ngGoogleStaticMaps', [])
-    .controller('StaticGoogleMapCtrl', function () {
+    .controller('StaticGoogleMapsCtrl', function () {
       var BASE_URL = '//maps.googleapis.com/maps/api/staticmap?';
       var STYLE_ATTRS = ['color', 'label', 'size', 'icon'];
 

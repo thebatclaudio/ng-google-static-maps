@@ -1,0 +1,31 @@
+{
+  "name": "ng-google-static-maps",
+  "version": "0.1.0",
+  "main": "ng-google-static-maps.js",
+  "homepage": "https://github.com/thebatclaudio/ng-google-static-maps",
+  "authors": [
+    "Claudio La Barbera <labarbera.claudio@gmail.com>"
+  ],
+  "description": "An AngularJS directive to quickly insert Google Static Maps.",
+  "keywords": [
+    "angularjs",
+    "static-google-maps",
+    "angular",
+    "angular-directives",
+    "angular-directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.0"
+  }
+}

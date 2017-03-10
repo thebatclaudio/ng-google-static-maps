@@ -3,7 +3,7 @@
 An [AngularJS](http://angularjs.org/) directive to quickly insert [Google Static
 Maps](https://developers.google.com/maps/documentation/staticmaps/).
 
-I was inspired by [angular-google-staticmaps](https://github.com/passy/angular-google-staticmaps) that seems it's no longer mantained.
+I was inspired by [angular-google-staticmaps](https://github.com/passy/angular-google-staticmaps) that seems is no longer mantained.
 
 ## Usage
 

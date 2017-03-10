@@ -1,1 +1,17 @@
-TEST
+<!doctype html>
+<html ng-app="testApp">
+	<head>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+	  <script src="ng-google-static-maps.js"></script>
+	  <script src="app.js"></script>
+	</head>
+	<body>
+	  <div ng-controller="AppCtrl">
+	    <static-google-map size="600x250" markers="[{
+	    	color: 'blue',
+    		label: 'S',
+    		coords: [38.1, 12.2]
+    	}]" sensor="false" zoom="14"></static-google-map>
+	  </div>
+	</body>
+</html>

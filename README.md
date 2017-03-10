@@ -3,6 +3,8 @@
 An [AngularJS](http://angularjs.org/) directive to quickly insert [Google Static
 Maps](https://developers.google.com/maps/documentation/staticmaps/).
 
+I was inspired by [angular-google-staticmaps](https://github.com/passy/angular-google-staticmaps) that seems it's no longer mantained.
+
 ## Usage
 
 1. `bower install --save ng-google-static-maps`
@@ -23,9 +25,12 @@ Markers have the following format:
 $scope.markers = [{
     color: 'blue',
     label: 'S',
-    coords: [lat, lng]
+    coords: [lat, lng],
+    icon: YOUR_ICON_URL
 }];
 ```
+
+If markers change, the directive will refresh automatically.
 
 ## Attributes
 

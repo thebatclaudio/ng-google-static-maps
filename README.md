@@ -5,6 +5,8 @@ Maps](https://developers.google.com/maps/documentation/staticmaps/).
 
 I was inspired by [angular-google-staticmaps](https://github.com/passy/angular-google-staticmaps) that seems is no longer mantained.
 
+[See it in action](https://thebatclaudio.github.io/ng-google-static-maps/)
+
 ## Usage
 
 1. `bower install --save ng-google-static-maps`

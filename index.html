@@ -1,17 +1,68 @@
 <!doctype html>
 <html ng-app="testApp">
 	<head>
+		<title>ng-google-static-maps - An AngularJS directive for Google Static Maps</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 	  <script src="ng-google-static-maps.js"></script>
 	  <script src="app.js"></script>
+	  <!-- Place this tag in your head or just before your close body tag. -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	  <style>
+	  	body {
+	  		font-family: 'Montserrat', sans-serif;
+	  	}
+	  </style>
 	</head>
 	<body>
-	  <div ng-controller="AppCtrl">
+		<div class="container" ng-controller="AppCtrl">
+			<div class="jumbotron text-center">
+				<h1>ng-google-static-maps</h1>
+				<h2>An AngularJS directive to quickly insert Google Static Maps</h2>
+				<div style="margin-top: 40px">
+					<a class="github-button" href="https://github.com/thebatclaudio/ng-google-static-maps" data-icon="octicon-star" data-style="mega" data-count-href="/thebatclaudio/ng-google-static-maps/stargazers" data-count-api="/repos/thebatclaudio/ng-google-static-maps#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star thebatclaudio/ng-google-static-maps on GitHub">Star</a>
+					<a class="github-button" href="https://github.com/thebatclaudio/ng-google-static-maps/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/thebatclaudio/ng-google-static-maps/network" data-count-api="/repos/thebatclaudio/ng-google-static-maps#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork thebatclaudio/ng-google-static-maps on GitHub">Fork</a>
+					<a class="github-button" href="https://github.com/thebatclaudio" data-style="mega" data-count-href="/thebatclaudio/followers" data-count-api="/users/thebatclaudio#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @thebatclaudio on GitHub">Follow @thebatclaudio</a>
+				</div>
+			</div>
+
+			<h3 class="page-header">Getting started</h3>
+			<ul>
+				<li>Install with <strong>bower</strong>: <code>bower install ng-google-static-maps --save</code></li>
+				<li>Include <code>ng-google-static-maps.js</code></li>
+				<li>Include <code>tbc.ngGoogleStaticMaps</code> in your module dependencies</li>
+				<li>Enjoy the <code>static-google-map</code> directive!</li>
+			</ul>
+
+			<h3 class="page-header">Examples</h3>
+			<h4>Simple map</h4>
+			<h5>Code</h5>
+			<pre><code>&lt;static-google-map size="600x250" markers="[{
+	color: 'red',
+	label: 'A',
+	coords: [38.120598, 13.357907]
+}]" key="YOUR_API_KEY" sensor="false" zoom="14"&gt;&lt;/static-google-map&gt;</code></pre>
+			<h5>In action</h5>
 	    <static-google-map size="600x250" markers="[{
-	    	color: 'blue',
-    		label: 'S',
-    		coords: [38.1, 12.2]
+	    	color: 'red',
+    		label: 'A',
+    		coords: [38.120598, 13.357907]
     	}]" key="AIzaSyASqJKO_pzrwhbLpZafZOoW_56kRUzSiTw" sensor="false" zoom="14"></static-google-map>
-	  </div>
+
+    	<hr>
+
+			<h4>Custom PNG marker</h4>
+			<h5>Code</h5>
+			<pre><code>&lt;static-google-map size="600x250" markers="[{
+	coords: [38.120598, 13.357907],
+	icon: 'https://thebatclaudio.github.io/ng-google-static-maps/map-marker-icon.png'
+}]" key="YOUR_API_KEY" sensor="false" zoom="14"&gt;&lt;/static-google-map&gt;</code></pre>
+			<h5>In action</h5>
+	    <static-google-map size="600x250" markers="[{
+    		coords: [38.120598, 13.357907],
+    		icon: 'https://thebatclaudio.github.io/ng-google-static-maps/map-marker-icon.png'
+    	}]" key="AIzaSyASqJKO_pzrwhbLpZafZOoW_56kRUzSiTw" sensor="false" zoom="14"></static-google-map>    	
+		</div>
 	</body>
 </html>
